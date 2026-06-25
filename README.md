@@ -1,5 +1,5 @@
 # jjung2002.github.io
-
+<html lang="ko">
   <body>
     <div class="game-title">타워 디펜스 & FPS 하이브리드 프로젝트</div>
     <div class="game-description">
