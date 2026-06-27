@@ -1,10 +1,15 @@
 # jjung2002.github.io
 <html lang="ko">
   <body>
-    <div class="game-title">타워 디펜스 & FPS 하이브리드 프로젝트</div>
     <div class="game-description">
-      타워를 배치하여 방어선을 구축하고, 1인칭 시점으로 직접 전투에 참여하는 하이브리드 게임입니다.<br>
-      조작법: WASD 이동, 마우스 좌클릭 사격, 숫자 키로 타워 선택
     </div>
+    <div class="game-title">3인 제작 리듬탄막게임</div>
+    <a href="https://drive.google.com/file/d/1560znRkFTS2F37V-TcSqW4QyVaBG0k-8/view?usp=drive_link" target="_blank"></a>
+    <div class="game-title">4인 제작 공포게임</div>
+    <a href="https://drive.google.com/file/d/16V-nXyjkaAxpwjUAmK5hyJ511gE2Eq_T/view?usp=drive_link" target="_blank"></a>
+    <div class="game-title">4인 제작 공포게임 내용 pptx</div>
+    <a href="https://docs.google.com/presentation/d/1zKhrEZib4bScawb8hLI1ZOU2NQZLduu8/edit?usp=drive_link&ouid=102295740409891925672&rtpof=true&sd=true" target="_blank"></a>
+    <div class="game-title">1인 제작 타워디펜스fps 게임</div>
+    <a href="https://yoonyyun.itch.io/t-bot?secret=rKUlsPWSNJy8BAh52h0DFeOIU" target="_blank"></a>
   </body>
 </html>
