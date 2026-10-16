@@ -1,1339 +1,321 @@
-<!DOCTYPE html>
-<html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>정재윤 | Game Developer Portfolio</title>
+<div align="center">
+
+# Jae-Yun Jeong
+
+### Game Developer Portfolio
+
+**게임을 직접 만들고, AI와 함께 더 빠르게 성장하는 개발자**
+
+Unity와 Unreal Engine을 활용하여 다양한 장르의 게임을 제작하고 있습니다.  
+플레이어 시스템, 전투, 인벤토리, 게임 AI, UI, 레벨 디자인 등  
+게임 플레이 전반을 직접 구현하는 개발자를 목표로 하고 있습니다.
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+</div>
 
-        html {
-            scroll-behavior: smooth;
-        }
+---
 
-        body {
-            font-family:
-                Pretendard,
-                -apple-system,
-                BlinkMacSystemFont,
-                "Segoe UI",
-                sans-serif;
+## About Me
 
-            background: #0b1120;
-            color: #f8fafc;
-            line-height: 1.7;
-        }
+동국대학교 **멀티미디어소프트웨어공학 전공**으로 게임 개발자를 목표로 공부하고 있습니다.
 
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
+Unity와 Unreal Engine을 활용하여 팀 프로젝트와 개인 프로젝트를 진행했으며,  
+단순히 기능을 구현하는 것에서 그치지 않고  
+**플레이어가 어떤 경험을 하게 되는지 고민하며 게임 시스템과 레벨을 설계하는 것**을 중요하게 생각합니다.
 
-        .container {
-            width: 90%;
-            max-width: 1100px;
-            margin: auto;
-        }
+최근에는 생성형 AI를 새로운 기술 학습, 코드 분석, 디버깅, 아이디어 탐색 및 프로토타이핑에 활용하며  
+게임 개발 과정에서 AI를 효과적으로 활용하는 방법을 함께 학습하고 있습니다.
 
+---
 
-        /* =========================
-           NAVIGATION
-        ========================== */
+## Tech Stack
 
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
+### Game Engine
 
-            width: 100%;
-            height: 70px;
+![Unity](https://img.shields.io/badge/Unity-000000?style=flat-square&logo=unity&logoColor=white)
+![Unreal Engine](https://img.shields.io/badge/Unreal%20Engine-0E1128?style=flat-square&logo=unrealengine&logoColor=white)
 
-            background: rgba(11, 17, 32, 0.9);
-            backdrop-filter: blur(12px);
+### Languages
 
-            border-bottom: 1px solid #1e293b;
+![C#](https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white)
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 
-            z-index: 1000;
-        }
+### Development
 
-        .nav-inner {
-            height: 100%;
+`Blueprint` `Game AI` `Inventory System` `FPS Mechanics` `Level Design` `UI / UX`
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+---
 
-        .logo {
-            font-size: 20px;
-            font-weight: 800;
-        }
+# Game Projects
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-        }
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <a href="#01-retrodash">
+        <img src="images/retrodash.jpg" width="100%" alt="RetroDash">
+      </a>
+      <br><br>
+      <b>RetroDash</b>
+      <br>
+      3인 팀 프로젝트
+      <br>
+      Unity · C#
+    </td>
 
-        .nav-links a {
-            color: #94a3b8;
-            transition: 0.2s;
-        }
+    <td width="50%" align="center">
+      <a href="#02-todays-shopping-list">
+        <img src="images/shoppinglist.jpg" width="100%" alt="Today's Shopping List">
+      </a>
+      <br><br>
+      <b>Today's Shopping List</b>
+      <br>
+      4인 팀 프로젝트
+      <br>
+      Unreal Engine 5 · C++ · Blueprint
+    </td>
+  </tr>
 
-        .nav-links a:hover {
-            color: #38bdf8;
-        }
+  <tr>
+    <td width="50%" align="center">
+      <a href="#03-t-bot">
+        <img src="images/tbot.jpg" width="100%" alt="T-Bot">
+      </a>
+      <br><br>
+      <b>T-Bot</b>
+      <br>
+      개인 프로젝트
+      <br>
+      Unity · C#
+    </td>
 
+    <td width="50%" align="center">
+      <a href="#04-keepmove">
+        <img src="images/keepmove.jpg" width="100%" alt="Keepmove">
+      </a>
+      <br><br>
+      <b>Keepmove</b>
+      <br>
+      개인 프로젝트 · 2 Day Prototype
+      <br>
+      Unity · C#
+    </td>
+  </tr>
+</table>
 
-        /* =========================
-           HERO
-        ========================== */
+---
 
-        .hero {
-            min-height: 100vh;
+# 01. RetroDash
 
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+### 2D Rhythm Bullet Hell Game
 
-            padding-top: 70px;
-        }
+**3인 팀 프로젝트**
 
-        .hero-label {
-            color: #38bdf8;
+음악의 비트에 맞춰 다양한 장애물과 공격 패턴이 등장하는  
+2D 리듬 기반 회피 게임입니다.
 
-            font-size: 15px;
-            font-weight: 700;
+플레이어는 이동과 대시를 활용해 탄막을 피하고,  
+아이템을 활용하면서 음악이 끝날 때까지 생존해야 합니다.
 
-            letter-spacing: 2px;
+### 담당 역할
 
-            margin-bottom: 20px;
-        }
+- 플레이어 시스템 구현
+- 아이템 시스템 구현
+- 맵 구성
+- 애니메이션 배치
+- 레벨 디자인
 
-        .hero h1 {
-            font-size: clamp(42px, 7vw, 78px);
-            line-height: 1.15;
+### 주요 시스템
 
-            max-width: 900px;
+- 타이틀 → 스테이지 선택 → 플레이 → 클리어 / 게임오버 씬 흐름
+- 점탄, 레이저, 기둥, 폭탄 등 다양한 장애물 패턴
+- 플레이어 위치를 기반으로 한 보스 추적 공격
+- 회복 / 보호막 / 무적 / 이동속도 증가 아이템
+- 피격 횟수 및 점수 기반 랭크 시스템
+- 음악과 게임 진행의 동기화
 
-            margin-bottom: 30px;
-        }
+### Tech
 
-        .hero h1 span {
-            color: #38bdf8;
-        }
+`Unity` `C#` `2D Game` `Level Design` `Game System`
 
-        .hero-description {
-            max-width: 730px;
+### Link
 
-            color: #94a3b8;
+[RetroDash 게임 보기](https://drive.google.com/file/d/1560znRkFTS2F37V-TcSqW4QyVaBG0k-8/view?usp=drive_link)
 
-            font-size: 18px;
-        }
+---
 
-        .hero-buttons {
-            margin-top: 35px;
+# 02. Today's Shopping List
 
-            display: flex;
-            gap: 15px;
-        }
+### 3D First Person Horror Game
 
-        .button {
-            display: inline-block;
+**4인 팀 프로젝트**
 
-            padding: 13px 22px;
+나폴리탄 괴담을 기반으로 제작한 3D 1인칭 공포 게임입니다.
 
-            border-radius: 8px;
+플레이어는 대형 마트에서  
+진실과 거짓이 동적으로 변하는 안전수칙을 확인하면서  
+쇼핑 리스트에 적힌 물건을 수집해야 합니다.
 
-            font-weight: 700;
+스테이지가 진행될수록 새로운 몬스터와 기믹이 추가되어  
+플레이어에게 점점 더 큰 심리적 압박을 주도록 설계했습니다.
 
-            transition: 0.2s;
-        }
+### 담당 역할
 
-        .button-primary {
-            background: #38bdf8;
-            color: #0f172a;
-        }
+- 플레이어 캐릭터
+- 인벤토리 시스템
+- 아이템 시스템
+- 맵 구조 설계
+- 스토리 배경 구성
+- 몬스터 및 게임 기믹 설계
 
-        .button-primary:hover {
-            background: #7dd3fc;
-        }
+### 주요 시스템
 
-        .button-outline {
-            border: 1px solid #334155;
-        }
+- WASD 이동 / 달리기 / 숙이기
+- 스태미너 시스템
+- 36슬롯 인벤토리
+- 아이템 Pickup
+- Drag & Drop UI
+- 동적으로 진실과 거짓이 변경되는 지침서
+- 다양한 행동 패턴을 가진 몬스터
+- 포스트 프로세스 기반 공포 연출
+- 카메라 시퀀서를 활용한 엔딩 연출
+- 스테이지별 아이템 및 난이도 구성
 
-        .button-outline:hover {
-            border-color: #38bdf8;
-        }
+### Tech
 
+`Unreal Engine 5` `C++` `Blueprint` `Inventory` `Game AI` `Level Design`
 
-        /* =========================
-           COMMON SECTION
-        ========================== */
+### Links
 
-        section {
-            padding: 110px 0;
-        }
+[게임 보기](https://drive.google.com/file/d/16V-nXyjkaAxpwjUAmK5hyJ511gE2Eq_T/view?usp=drive_link)
 
-        .section-label {
-            color: #38bdf8;
+[프로젝트 PPT 보기](https://docs.google.com/presentation/d/1zKhrEZib4bScawb8hLI1ZOU2NQZLduu8/edit?usp=drive_link&ouid=102295740409891925672&rtpof=true&sd=true)
 
-            font-size: 14px;
-            font-weight: 700;
+---
 
-            letter-spacing: 2px;
+# 03. T-Bot
 
-            margin-bottom: 10px;
-        }
+### FPS × Tower Defense
 
-        .section-title {
-            font-size: 42px;
-            margin-bottom: 50px;
-        }
+**개인 프로젝트**
 
+타워 디펜스의 전략적인 포탑 배치와  
+FPS 방식의 직접 전투를 결합한 하이브리드 게임입니다.
 
-        /* =========================
-           ABOUT
-        ========================== */
+웨이브가 시작되기 전에는 탑다운 시점에서 포탑을 설치하고,  
+전투가 시작되면 FPS 시점으로 전환되어  
+플레이어가 직접 적과 전투합니다.
 
-        .about-content {
-            max-width: 800px;
+타워만 사용하거나 총만 사용하는 방식이 아니라  
+두 시스템을 모두 활용해야 스테이지를 효과적으로 공략할 수 있도록 설계했습니다.
 
-            color: #cbd5e1;
+### 담당 역할
 
-            font-size: 18px;
-        }
+**기획 및 전체 구현**
 
-        .about-content p + p {
-            margin-top: 20px;
-        }
+- 플레이어
+- FPS 전투 시스템
+- 포탑 시스템
+- 적 시스템
+- 웨이브 관리
+- 스테이지
+- UI
+- 게임 흐름
+- 레벨 디자인
 
+### 주요 시스템
 
-        /* =========================
-           PROJECT GRID
-        ========================== */
+- 탑다운 ↔ FPS 시점 전환
+- 포탑 구매 및 배치
+- 무기 구매 시스템
+- 웨이브 기반 적 스폰
+- 총 6개 스테이지 + 보스 스테이지
+- 스테이지 해금 시스템
+- 플레이어 체력 / 스태미너
+- 볼륨 / 감도 / 밝기 옵션
 
-        .project-grid {
-            display: grid;
+### Tech
 
-            grid-template-columns:
-                repeat(2, minmax(0, 1fr));
+`Unity` `C#` `FPS` `Tower Defense` `Wave System` `Level Design`
 
-            gap: 25px;
-        }
+### Link
 
-        .project-card {
-            position: relative;
+[T-Bot itch.io](https://yoonyyun.itch.io/t-bot?secret=rKUlsPWSNJy8BAh52h0DFeOIU)
 
-            aspect-ratio: 1 / 1;
+---
 
-            overflow: hidden;
+# 04. Keepmove
 
-            border-radius: 18px;
+### Survivors-like × Tower Defense
 
-            background: #1e293b;
+**개인 프로젝트 · 2 Day Prototype**
 
-            cursor: pointer;
-        }
+뱀서라이크 스타일의 전투와  
+타워 디펜스 요소를 결합하여 제작한 Unity 개인 프로젝트입니다.
 
-        .project-card img {
-            width: 100%;
-            height: 100%;
+하나의 아이디어를 짧은 시간 안에 실제로 플레이 가능한 게임으로 만드는 것을 목표로  
+**2일 동안 제작한 프로토타입**입니다.
 
-            object-fit: cover;
+빠르게 핵심 게임 루프를 정리하고  
+필요한 기능을 우선순위에 따라 구현하면서  
+짧은 개발 기간 안에서 게임을 완성하는 경험을 목표로 했습니다.
 
-            transition:
-                transform 0.5s,
-                filter 0.5s;
-        }
+### Development
 
-        .project-card:hover img {
-            transform: scale(1.07);
-        }
+- Solo Development
+- Development Time : **2 Days**
 
-        .project-overlay {
-            position: absolute;
+### Tech
 
-            inset: 0;
+`Unity` `C#` `Prototype` `Survivors-like` `Tower Defense`
 
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
+### Links
 
-            padding: 30px;
+[Keepmove 게임 보기](https://drive.google.com/file/d/1l2K6rDjb6jW5CVa8MG-XB_c-m5D4GFho/view?usp=drive_link)
 
-            background:
-                linear-gradient(
-                    to top,
-                    rgba(0, 0, 0, 0.92),
-                    rgba(0, 0, 0, 0.1)
-                );
-        }
+[Keepmove 플레이 영상](https://drive.google.com/file/d/1LFKtwrAdAXq8AY13b8G6LTfKEV1jhnmT/view?usp=drive_link)
 
-        .project-type {
-            color: #38bdf8;
+---
 
-            font-size: 14px;
-            font-weight: 700;
-        }
+# AI-Assisted Game Development
 
-        .project-overlay h3 {
-            font-size: 30px;
+게임 개발 과정에서 생성형 AI를  
+단순한 코드 생성기가 아니라 **개발 과정의 보조 도구**로 활용하고 있습니다.
 
-            margin-top: 5px;
-        }
+### 활용 분야
 
-        .project-overlay p {
-            color: #cbd5e1;
-        }
+- 새로운 게임 시스템 아이디어 탐색
+- C# / C++ 코드 분석
+- 오류 원인 및 디버깅 방향 탐색
+- 새로운 API와 엔진 기능 학습
+- 알고리즘 및 게임 로직 개선
+- 빠른 프로토타이핑
 
+AI가 생성한 결과를 그대로 적용하기보다는  
+코드가 어떤 원리로 동작하는지 확인하고  
+현재 프로젝트 구조에 맞게 직접 수정하고 검증하는 것을 중요하게 생각합니다.
 
-        /* =========================
-           PROJECT DETAIL
-        ========================== */
+---
 
-        .project-detail {
-            border-top: 1px solid #1e293b;
-        }
+# What I Want to Build
 
-        .detail-header {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
+게임의 재미를 만드는 시스템을 직접 설계하고 구현할 수 있는 개발자를 목표로 하고 있습니다.
 
-            margin-bottom: 30px;
-        }
+현재까지 Unity와 Unreal Engine을 이용하여  
+리듬 게임, 공포 게임, FPS, 타워 디펜스 등 다양한 장르를 경험했으며,
 
-        .detail-number {
-            color: #38bdf8;
-            font-weight: 700;
-        }
+앞으로는 게임 개발 경험과 AI 기술을 함께 활용해  
+더 효율적으로 새로운 아이디어를 실험하고  
+플레이어에게 새로운 경험을 제공하는 게임을 만들고 싶습니다.
 
-        .detail-title {
-            font-size: 38px;
-        }
+---
 
-        .detail-subtitle {
-            color: #94a3b8;
+<div align="center">
 
-            font-size: 18px;
-        }
+### Jae-Yun Jeong
 
-        .detail-description {
-            max-width: 800px;
+Game Developer
 
-            color: #cbd5e1;
+Dongguk University  
+Multimedia Software Engineering
 
-            margin-bottom: 35px;
-        }
-
-        .detail-info {
-            display: grid;
-
-            grid-template-columns:
-                repeat(3, 1fr);
-
-            gap: 20px;
-
-            margin-bottom: 30px;
-        }
-
-        .info-box {
-            padding: 20px;
-
-            background: #111827;
-
-            border: 1px solid #1e293b;
-
-            border-radius: 10px;
-        }
-
-        .info-box strong {
-            color: #38bdf8;
-
-            display: block;
-
-            margin-bottom: 8px;
-        }
-
-        .project-buttons {
-            display: flex;
-            flex-wrap: wrap;
-
-            gap: 10px;
-        }
-
-
-        /* =========================
-           AI
-        ========================== */
-
-        .ai-box {
-            padding: 45px;
-
-            border-radius: 18px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #111827,
-                    #172554
-                );
-
-            border: 1px solid #1e3a5f;
-        }
-
-        .ai-box h3 {
-            font-size: 30px;
-
-            margin-bottom: 20px;
-        }
-
-        .ai-box p {
-            color: #cbd5e1;
-
-            max-width: 800px;
-        }
-
-        .ai-list {
-            display: grid;
-
-            grid-template-columns:
-                repeat(2, 1fr);
-
-            gap: 15px;
-
-            margin-top: 30px;
-        }
-
-        .ai-item {
-            background: rgba(255,255,255,0.04);
-
-            padding: 18px;
-
-            border-radius: 10px;
-        }
-
-
-        /* =========================
-           SKILLS
-        ========================== */
-
-        .skill-list {
-            display: flex;
-            flex-wrap: wrap;
-
-            gap: 12px;
-        }
-
-        .skill {
-            padding: 10px 17px;
-
-            border-radius: 100px;
-
-            background: #111827;
-
-            border: 1px solid #334155;
-
-            color: #cbd5e1;
-        }
-
-
-        /* =========================
-           FOOTER
-        ========================== */
-
-        footer {
-            border-top: 1px solid #1e293b;
-
-            padding: 50px 0;
-
-            text-align: center;
-
-            color: #64748b;
-        }
-
-
-        /* =========================
-           MOBILE
-        ========================== */
-
-        @media (max-width: 750px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .project-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .detail-info {
-                grid-template-columns: 1fr;
-            }
-
-            .ai-list {
-                grid-template-columns: 1fr;
-            }
-
-            .detail-header {
-                flex-direction: column;
-            }
-        }
-
-    </style>
-</head>
-
-
-<body>
-
-
-<!-- =========================
-     NAV
-========================== -->
-
-<nav>
-
-    <div class="container nav-inner">
-
-        <a class="logo" href="#">
-            JY.
-        </a>
-
-        <div class="nav-links">
-
-            <a href="#about">About</a>
-
-            <a href="#projects">Projects</a>
-
-            <a href="#ai">AI & Development</a>
-
-            <a href="#skills">Skills</a>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-
-<!-- =========================
-     HERO
-========================== -->
-
-<header class="container hero">
-
-    <div class="hero-label">
-        GAME DEVELOPER PORTFOLIO
-    </div>
-
-    <h1>
-        게임을 직접 만들고,<br>
-        <span>AI와 함께</span>
-        더 빠르게 성장하는 개발자
-    </h1>
-
-    <p class="hero-description">
-
-        안녕하세요. 게임 개발자 정재윤입니다.
-
-        Unity와 Unreal Engine을 활용해
-        다양한 장르의 게임을 제작하며
-
-        플레이어 시스템, 전투, 인벤토리,
-        AI, UI, 레벨 디자인 등
-        게임 플레이 전반을 구현해 왔습니다.
-
-    </p>
-
-    <div class="hero-buttons">
-
-        <a
-            class="button button-primary"
-            href="#projects">
-
-            프로젝트 보기
-
-        </a>
-
-        <a
-            class="button button-outline"
-            href="#ai">
-
-            개발 방식
-
-        </a>
-
-    </div>
-
-</header>
-
-
-
-<main>
-
-
-<!-- =========================
-     ABOUT
-========================== -->
-
-<section id="about">
-
-    <div class="container">
-
-        <div class="section-label">
-            ABOUT
-        </div>
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="about-content">
-
-            <p>
-                동국대학교 멀티미디어소프트웨어공학 전공으로,
-                게임 개발자를 목표로 다양한 프로젝트를
-                직접 기획하고 구현해 왔습니다.
-            </p>
-
-            <p>
-                단순히 기능을 구현하는 것에서 그치지 않고,
-                플레이어가 실제로 어떤 경험을 하게 되는지를
-                고민하며 게임 시스템과 레벨을 설계합니다.
-            </p>
-
-            <p>
-                또한 생성형 AI를
-                아이디어 탐색, 코드 분석,
-                디버깅, 기술 학습,
-                빠른 프로토타이핑에 활용하며
-                새로운 개발 방식을 적극적으로 익히고 있습니다.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     PROJECT GRID
-========================== -->
-
-<section id="projects">
-
-    <div class="container">
-
-        <div class="section-label">
-            PROJECTS
-        </div>
-
-        <h2 class="section-title">
-            Game Projects
-        </h2>
-
-
-        <div class="project-grid">
-
-
-            <!-- RetroDash -->
-
-            <a
-                class="project-card"
-                href="#retrodash">
-
-                <img
-                    src="images/retrodash.jpg"
-                    alt="RetroDash">
-
-                <div class="project-overlay">
-
-                    <span class="project-type">
-                        3인 팀 프로젝트
-                    </span>
-
-                    <h3>
-                        RetroDash
-                    </h3>
-
-                    <p>
-                        Rhythm Bullet Hell
-                    </p>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- Shopping List -->
-
-            <a
-                class="project-card"
-                href="#shoppinglist">
-
-                <img
-                    src="images/shoppinglist.jpg"
-                    alt="Today's Shopping List">
-
-                <div class="project-overlay">
-
-                    <span class="project-type">
-                        4인 팀 프로젝트
-                    </span>
-
-                    <h3>
-                        Today's Shopping List
-                    </h3>
-
-                    <p>
-                        First Person Horror
-                    </p>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- T-Bot -->
-
-            <a
-                class="project-card"
-                href="#tbot">
-
-                <img
-                    src="images/tbot.jpg"
-                    alt="T-Bot">
-
-                <div class="project-overlay">
-
-                    <span class="project-type">
-                        개인 프로젝트
-                    </span>
-
-                    <h3>
-                        T-Bot
-                    </h3>
-
-                    <p>
-                        FPS × Tower Defense
-                    </p>
-
-                </div>
-
-            </a>
-
-
-
-            <!-- Keepmove -->
-
-            <a
-                class="project-card"
-                href="#keepmove">
-
-                <img
-                    src="images/keepmove.jpg"
-                    alt="Keepmove">
-
-                <div class="project-overlay">
-
-                    <span class="project-type">
-                        개인 프로젝트 · 2 Day Prototype
-                    </span>
-
-                    <h3>
-                        Keepmove
-                    </h3>
-
-                    <p>
-                        Survivors-like × Tower Defense
-                    </p>
-
-                </div>
-
-            </a>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     RETRODASH
-========================== -->
-
-<section
-    id="retrodash"
-    class="project-detail">
-
-    <div class="container">
-
-        <div class="detail-header">
-
-            <div>
-
-                <div class="detail-number">
-                    PROJECT 01
-                </div>
-
-                <h2 class="detail-title">
-                    RetroDash
-                </h2>
-
-                <p class="detail-subtitle">
-                    2D 리듬 탄막 회피 게임
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <p class="detail-description">
-
-            음악의 비트에 맞춰 다양한 장애물과
-            공격 패턴이 등장하는 리듬 기반 회피 게임입니다.
-
-            플레이어는 이동과 대시를 활용하여
-            공격을 피하고 음악이 끝날 때까지
-            생존해야 합니다.
-
-        </p>
-
-
-        <div class="detail-info">
-
-            <div class="info-box">
-
-                <strong>
-                    Team
-                </strong>
-
-                3인 제작
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Role
-                </strong>
-
-                플레이어 · 아이템 · 맵 구성 ·
-                애니메이션 배치 · 레벨 디자인
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Tech
-                </strong>
-
-                Unity · C#
-
-            </div>
-
-        </div>
-
-
-        <div class="project-buttons">
-
-            <a
-                class="button button-primary"
-                href="https://drive.google.com/file/d/1560znRkFTS2F37V-TcSqW4QyVaBG0k-8/view?usp=drive_link"
-                target="_blank">
-
-                게임 보기
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     SHOPPING LIST
-========================== -->
-
-<section
-    id="shoppinglist"
-    class="project-detail">
-
-    <div class="container">
-
-        <div class="detail-number">
-            PROJECT 02
-        </div>
-
-        <h2 class="detail-title">
-            Today's Shopping List
-        </h2>
-
-        <p class="detail-subtitle">
-            3D 1인칭 공포 게임
-        </p>
-
-
-        <br>
-
-
-        <p class="detail-description">
-
-            나폴리탄 괴담을 기반으로 제작한
-            1인칭 공포 게임입니다.
-
-            대형 마트에서 진실과 거짓이
-            동적으로 변하는 안전수칙을 해석하면서
-            쇼핑 리스트에 있는 물건들을 수집합니다.
-
-        </p>
-
-
-        <div class="detail-info">
-
-            <div class="info-box">
-
-                <strong>
-                    Team
-                </strong>
-
-                4인 제작
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Role
-                </strong>
-
-                플레이어 · 인벤토리 · 아이템 ·
-                맵 구조 · 몬스터 · 기믹
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Tech
-                </strong>
-
-                Unreal Engine 5 ·
-                C++ · Blueprint
-
-            </div>
-
-        </div>
-
-
-        <div class="project-buttons">
-
-            <a
-                class="button button-primary"
-                href="https://drive.google.com/file/d/16V-nXyjkaAxpwjUAmK5hyJ511gE2Eq_T/view?usp=drive_link"
-                target="_blank">
-
-                게임 보기
-
-            </a>
-
-
-            <a
-                class="button button-outline"
-                href="https://docs.google.com/presentation/d/1zKhrEZib4bScawb8hLI1ZOU2NQZLduu8/edit?usp=drive_link&ouid=102295740409891925672&rtpof=true&sd=true"
-                target="_blank">
-
-                프로젝트 PPT
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     T-BOT
-========================== -->
-
-<section
-    id="tbot"
-    class="project-detail">
-
-    <div class="container">
-
-        <div class="detail-number">
-            PROJECT 03
-        </div>
-
-        <h2 class="detail-title">
-            T-Bot
-        </h2>
-
-        <p class="detail-subtitle">
-            FPS × Tower Defense
-        </p>
-
-
-        <br>
-
-
-        <p class="detail-description">
-
-            타워 디펜스의 전략적인 포탑 배치와
-            FPS 방식의 직접 전투를 결합한
-            개인 제작 게임입니다.
-
-            웨이브 시작 전 포탑을 배치하고,
-            전투가 시작되면 FPS 시점으로 전환하여
-            플레이어가 직접 적과 싸웁니다.
-
-        </p>
-
-
-        <div class="detail-info">
-
-            <div class="info-box">
-
-                <strong>
-                    Team
-                </strong>
-
-                개인 제작
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Role
-                </strong>
-
-                기획 · 시스템 · 전투 ·
-                적 · UI · 레벨 구현
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Tech
-                </strong>
-
-                Unity · C#
-
-            </div>
-
-        </div>
-
-
-        <div class="project-buttons">
-
-            <a
-                class="button button-primary"
-                href="https://yoonyyun.itch.io/t-bot?secret=rKUlsPWSNJy8BAh52h0DFeOIU"
-                target="_blank">
-
-                itch.io
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     KEEPMOVE
-========================== -->
-
-<section
-    id="keepmove"
-    class="project-detail">
-
-    <div class="container">
-
-        <div class="detail-number">
-            PROJECT 04
-        </div>
-
-        <h2 class="detail-title">
-            Keepmove
-        </h2>
-
-        <p class="detail-subtitle">
-            Survivors-like × Tower Defense
-        </p>
-
-
-        <br>
-
-
-        <p class="detail-description">
-
-            뱀서라이크 스타일의 전투와
-            타워 디펜스 요소를 결합해 제작한
-            Unity 개인 프로젝트입니다.
-
-            제한된 시간 안에서
-            아이디어를 실제 플레이 가능한 게임으로
-            구현하는 것을 목표로
-            2일 동안 개발한 프로토타입입니다.
-
-        </p>
-
-
-        <div class="detail-info">
-
-            <div class="info-box">
-
-                <strong>
-                    Team
-                </strong>
-
-                개인 제작
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Development
-                </strong>
-
-                2 Days
-
-            </div>
-
-
-            <div class="info-box">
-
-                <strong>
-                    Tech
-                </strong>
-
-                Unity · C#
-
-            </div>
-
-        </div>
-
-
-        <div class="project-buttons">
-
-            <a
-                class="button button-primary"
-                href="https://drive.google.com/file/d/1l2K6rDjb6jW5CVa8MG-XB_c-m5D4GFho/view?usp=drive_link"
-                target="_blank">
-
-                게임 보기
-
-            </a>
-
-
-            <a
-                class="button button-outline"
-                href="https://drive.google.com/file/d/1LFKtwrAdAXq8AY13b8G6LTfKEV1jhnmT/view?usp=drive_link"
-                target="_blank">
-
-                플레이 영상
-
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     AI
-========================== -->
-
-<section id="ai">
-
-    <div class="container">
-
-        <div class="section-label">
-            DEVELOPMENT
-        </div>
-
-        <h2 class="section-title">
-            AI-Assisted Development
-        </h2>
-
-
-        <div class="ai-box">
-
-            <h3>
-                AI를 사용해 코드를 만드는 것보다,<br>
-                AI와 함께 문제를 해결합니다.
-            </h3>
-
-
-            <p>
-
-                생성형 AI를 새로운 기술을 탐색하고
-                문제를 분석하는 개발 보조 도구로 활용합니다.
-
-                AI가 제안한 결과를 그대로 적용하지 않고,
-                코드의 동작 원리를 확인한 뒤
-                프로젝트에 맞게 수정하고 검증하는 것을
-                중요하게 생각합니다.
-
-            </p>
-
-
-            <div class="ai-list">
-
-                <div class="ai-item">
-                    게임 시스템 아이디어 탐색
-                </div>
-
-                <div class="ai-item">
-                    C# / C++ 코드 분석
-                </div>
-
-                <div class="ai-item">
-                    디버깅 및 오류 원인 탐색
-                </div>
-
-                <div class="ai-item">
-                    빠른 프로토타이핑
-                </div>
-
-                <div class="ai-item">
-                    새로운 기술 학습
-                </div>
-
-                <div class="ai-item">
-                    게임 로직 개선안 탐색
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =========================
-     SKILLS
-========================== -->
-
-<section id="skills">
-
-    <div class="container">
-
-        <div class="section-label">
-            SKILLS
-        </div>
-
-        <h2 class="section-title">
-            Tech Stack
-        </h2>
-
-
-        <div class="skill-list">
-
-            <span class="skill">
-                Unity
-            </span>
-
-            <span class="skill">
-                Unreal Engine 5
-            </span>
-
-            <span class="skill">
-                C#
-            </span>
-
-            <span class="skill">
-                C++
-            </span>
-
-            <span class="skill">
-                Blueprint
-            </span>
-
-            <span class="skill">
-                Python
-            </span>
-
-            <span class="skill">
-                Game AI
-            </span>
-
-            <span class="skill">
-                Level Design
-            </span>
-
-            <span class="skill">
-                UI / UX
-            </span>
-
-            <span class="skill">
-                GitHub
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-</main>
-
-
-
-<footer>
-
-    © 2026 Jae-Yun Jeong
-    · Game Developer Portfolio
-
-</footer>
-
-
-</body>
-
-</html>
+</div>
