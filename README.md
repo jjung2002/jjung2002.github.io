@@ -12,7 +12,6 @@ Unity와 Unreal Engine을 활용하여 다양한 장르의 게임을 제작하�
 
 </div>
 
----
 
 ## About Me
 
@@ -43,8 +42,6 @@ Unity와 Unreal Engine을 활용하여 팀 프로젝트와 개인 프로젝트�
 ### Development
 
 `Blueprint` `Game AI` `Inventory System` `FPS Mechanics` `Level Design` `UI / UX`
-
----
 
 # Game Projects
 
@@ -102,7 +99,6 @@ Unity와 Unreal Engine을 활용하여 팀 프로젝트와 개인 프로젝트�
   </tr>
 </table>
 
----
 
 # 01. RetroDash
 
@@ -190,7 +186,6 @@ Unity와 Unreal Engine을 활용하여 팀 프로젝트와 개인 프로젝트�
 
 [프로젝트 PPT 보기](https://docs.google.com/presentation/d/1zKhrEZib4bScawb8hLI1ZOU2NQZLduu8/edit?usp=drive_link&ouid=102295740409891925672&rtpof=true&sd=true)
 
----
 
 # 03. T-Bot
 
