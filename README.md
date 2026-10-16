@@ -46,60 +46,58 @@ Unity와 Unreal Engine을 활용하여 팀 프로젝트와 개인 프로젝트�
 # Game Projects
 
 <table>
-  <tr>
-    <td width="50%" align="center">
-      <a href="#01-retrodash">
-        <img src="images/retrodash.jpg" width="100%" alt="RetroDash">
-      </a>
-      <br><br>
-      <b>RetroDash</b>
-      <br>
-      3인 팀 프로젝트
-      <br>
-      Unity · C#
-    </td>
-
-    <td width="50%" align="center">
-      <a href="#02-todays-shopping-list">
-        <img src="images/shoppinglist.jpg" width="100%" alt="Today's Shopping List">
-      </a>
-      <br><br>
-      <b>Today's Shopping List</b>
-      <br>
-      4인 팀 프로젝트
-      <br>
-      Unreal Engine 5 · C++ · Blueprint
-    </td>
-  </tr>
-
-  <tr>
-    <td width="50%" align="center">
-      <a href="#03-t-bot">
-        <img src="images/tbot.jpg" width="100%" alt="T-Bot">
-      </a>
-      <br><br>
-      <b>T-Bot</b>
-      <br>
-      개인 프로젝트
-      <br>
-      Unity · C#
-    </td>
-
-    <td width="50%" align="center">
-      <a href="#04-keepmove">
-        <img src="images/keepmove.jpg" width="100%" alt="Keepmove">
-      </a>
-      <br><br>
-      <b>Keepmove</b>
-      <br>
-      개인 프로젝트 · 2 Day Prototype
-      <br>
-      Unity · C#
-    </td>
-  </tr>
+<tr>
+<td width="50%" align="center">
+<a href="#01-retrodash">
+<img src="images/retrodash.jpg" width="85%" alt="RetroDash">
+</a>
+<br><br>
+<b>RetroDash</b>
+<br>
+3인 팀 프로젝트
+<br>
+Unity · C#
+</td>
+<td width="50%" align="center">
+<a href="#02-todays-shopping-list">
+<img src="images/shoppinglist.jpg" width="85%" alt="Today's Shopping List">
+</a>
+<br><br>
+<b>Today's Shopping List</b>
+<br>
+4인 팀 프로젝트
+<br>
+Unreal Engine 5 · C++ · Blueprint
+</td>
+</tr>
+<tr>
+<td width="50%" align="center">
+<a href="#03-t-bot">
+<img src="images/tbot.jpg" width="85%" alt="T-Bot">
+</a>
+<br><br>
+<b>T-Bot</b>
+<br>
+개인 프로젝트
+<br>
+Unity · C#
+</td>
+<td width="50%" align="center">
+<a href="#04-keepmove">
+<img src="images/keepmove.jpg" width="85%" alt="Keepmove">
+</a>
+<br><br>
+<b>Keepmove</b>
+<br>
+개인 프로젝트 · 2 Day Prototype
+<br>
+Unity · C#
+</td>
+</tr>
 </table>
 
 ---
+
 
 # 01. RetroDash
 
