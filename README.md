@@ -1,6 +1,6 @@
 <div align="center">
 
-# Jae-Yun Jeong
+# Jae-Yun Jung
 
 ### Game Developer Portfolio
 
