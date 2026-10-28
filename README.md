@@ -264,7 +264,7 @@ FPS 방식의 직접 전투를 결합한 하이브리드 게임입니다.
 
 ### Links
 
-[Keepmove 게임 보기](https://drive.google.com/file/d/1l2K6rDjb6jW5CVa8MG-XB_c-m5D4GFho/view?usp=drive_link)
+[Keepmove 게임 보기](https://drive.google.com/file/d/1AoQSw8czTDx54ZL6PKIuLVyqoniSl9bk/view?usp=drive_link)
 
 [Keepmove 플레이 영상](https://drive.google.com/file/d/1g0WYrXBofzRgy2fbyXzDXFJxN7UmgDMa/view?usp=drive_link)
 
